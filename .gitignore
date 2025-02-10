@@ -14,3 +14,17 @@ n8n_data/storage/
 *.log
 *.tmp
 
+# Ignorar modelos de Ollama
+ollama_data/
+ollama_data/*
+ollama_data/.ollama/
+ollama_data/.ollama/*
+ollama_data/.ollama/models/
+ollama_data/.ollama/models/*
+ollama_data/.ollama/models/blobs/
+ollama_data/.ollama/models/blobs/*
+ollama_data/.ollama/models/manifests/
+ollama_data/.ollama/models/manifests/*
+ollama_data/id_ed25519
+ollama_data/id_ed25519.pub
+
