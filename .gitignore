@@ -1,0 +1,16 @@
+# Ignorar archivos grandes de Ollama
+ollama_data/models/
+ollama_data/*.bin
+ollama_data/*.gguf
+ollama_data/*.ggml
+ollama_data/*.safetensors
+ollama_data/.cache/
+
+# Ignorar la base de datos de n8n
+n8n_data/database.sqlite
+n8n_data/storage/
+
+# Ignorar archivos temporales de Git
+*.log
+*.tmp
+
