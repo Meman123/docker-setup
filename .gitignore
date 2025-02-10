@@ -1,10 +1,21 @@
-# Ignorar archivos grandes de Ollama
+# Ignorar modelos de Ollama, pero NO su configuración
 ollama_data/models/
-ollama_data/*.bin
-ollama_data/*.gguf
-ollama_data/*.ggml
-ollama_data/*.safetensors
-ollama_data/.cache/
+ollama_data/models/*
+ollama_data/.ollama/models/
+ollama_data/.ollama/models/*
+ollama_data/.ollama/models/blobs/
+ollama_data/.ollama/models/blobs/*
+ollama_data/.ollama/models/manifests/
+ollama_data/.ollama/models/manifests/*
+
+# Ignorar claves privadas de Ollama
+ollama_data/id_ed25519
+ollama_data/id_ed25519.pub
+ollama_data/.ollama/id_ed25519
+ollama_data/.ollama/id_ed25519.pub
+
+# Permitir la configuración de Ollama (necesaria para replicar el setup)
+!ollama_data/.ollama/config.json
 
 # Ignorar la base de datos de n8n
 n8n_data/database.sqlite
@@ -13,18 +24,4 @@ n8n_data/storage/
 # Ignorar archivos temporales de Git
 *.log
 *.tmp
-
-# Ignorar modelos de Ollama
-ollama_data/
-ollama_data/*
-ollama_data/.ollama/
-ollama_data/.ollama/*
-ollama_data/.ollama/models/
-ollama_data/.ollama/models/*
-ollama_data/.ollama/models/blobs/
-ollama_data/.ollama/models/blobs/*
-ollama_data/.ollama/models/manifests/
-ollama_data/.ollama/models/manifests/*
-ollama_data/id_ed25519
-ollama_data/id_ed25519.pub
 
